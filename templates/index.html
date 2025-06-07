@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analysis Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Stock Market Analysis Tool</h1>
+        <p>Enter stock ticker and select a date range to visualize performance</p>
+    </div>
+
+    <div class="controls">
+        <div class="input-group">
+            <label for="ticker">Stock ticker:</label>
+            <input type="text" id="ticker" name="ticker" placeholder="e.g., AAPL, MSFT, GOOGL">
+        </div>
+
+        <div class="input-group">
+            <label>Date Range:</label>
+            <div class="date-range">
+                <input type="date" id="startDate" class="date-input" name="startDate">
+                <span>to</span>
+                <input type="date" id="endDate" class="date-input" name="endDate">
+            </div>
+        </div>
+
+        <button id="fetchData">Analyze Stocks</button>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="stockChart"></canvas>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+/.venv
+/db.py
+/graph.py
+/main_jup.ipynb
+/nyse_tickers.csv
+/old
+/stock_data_db
+/__pycache__
